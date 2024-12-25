@@ -81,7 +81,7 @@
       "action": "add",
       "args": {
         "name": "discord",
-        "uri": "https://raw.githubusercontent.com/GhostRooter0953/discord-voice-ips/refs/heads/master/voice_domains/discord-voice-ip-list"
+        "uri": "https://raw.githubusercontent.com/fatyzzz/ipset-discord/refs/heads/main/discord.txt"
       }
     },
     {
