@@ -34,10 +34,10 @@ jobs:
       - name: Download GeoLite2 databases
         run: |
           mkdir -p output
-          curl -L "https://github.com/Loyalsoldier/geoip/raw/refs/heads/release/GeoLite2-ASN.tar.gz" -o ./output/GeoLite2-ASN.tar.gz
-          curl -L "https://github.com/Loyalsoldier/geoip/raw/refs/heads/release/GeoLite2-ASN-CSV.zip" -o ./output/GeoLite2-ASN-CSV.zip
-          curl -L "https://github.com/Loyalsoldier/geoip/raw/refs/heads/release/GeoLite2-Country.tar.gz" -o ./output/GeoLite2-Country.tar.gz
-          curl -L "https://github.com/Loyalsoldier/geoip/raw/refs/heads/release/GeoLite2-Country-CSV.zip" -o ./output/GeoLite2-Country-CSV.zip
+          curl -L "https://dl.netsyms.net/dbs/geolite2/GeoLite2-ASN.tar.gz" -o ./output/GeoLite2-ASN.tar.gz
+          curl -L "https://dl.netsyms.net/dbs/geolite2/GeoLite2-ASN-CSV.zip" -o ./output/GeoLite2-ASN-CSV.zip
+          curl -L "https://dl.netsyms.net/dbs/geolite2/GeoLite2-Country.tar.gz" -o ./output/GeoLite2-Country.tar.gz
+          curl -L "https://dl.netsyms.net/dbs/geolite2/GeoLite2-Country-CSV.zip" -o GeoLite2-Country-CSV.zip
 
       - name: Prepare GeoLite2 databases
         run: |
