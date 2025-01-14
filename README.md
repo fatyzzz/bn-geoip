@@ -1,6 +1,6 @@
 ## GEOIP with some bit more
 
-- renew discord
+- renew discord again
 
 ## License
 
