@@ -108,7 +108,8 @@ jobs:
           rm -rf ./output/GeoLite2-*.csv
           rm -rf ./output/GeoLite2-*.mmdb
           rm -rf ./output/GeoLite2-*.sha256sum
-          rm -rf ./output/{clash,dat,mrs,nginx,srs,surge,text}
+          rm -rf ./output/{clash,dat,mrs,nginx,srs,surge}
+          cd ./output/text && for file in *.txt; do echo "${file%.*}" >> list.txt; done && mv list.txt ../ && cd .. && rm -r text
 
       - name: Upload files to GitHub release
         uses: svenstaro/upload-release-action@v2
